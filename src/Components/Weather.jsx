@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useSyncExternalStore } from 'react'
+import React, { useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from 'react'
 import './Weather.css'
 import search_icon from'../assets/search.png'
 import clear_icon from'../assets/clear.png'
@@ -24,6 +24,10 @@ const Weather = () => {
   }
 
   const search = async (city) => {
+    if (city === "") {
+      alert("Enter City Name !")
+      return;
+    }
     try {
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`
       const response = await fetch(url);
@@ -40,6 +44,8 @@ const Weather = () => {
       
       
     } catch (error) {
+      setWeatherData (false);
+      console.error("Error In Fetching The Weather Data !")
       
     }
   }
