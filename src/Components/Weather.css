@@ -1,5 +1,6 @@
 .weather {
     place-self: center;
+    width: 380px;
     padding: 40px;
     border-radius: 30px;
     background-color: #aee2fb;
@@ -53,9 +54,6 @@
     display: flex;
     justify-content: space-between;
 }
-.col img {
-    color: #343434;
-}
 .weather_data col {
     display: flex;
     align-items: center;
@@ -65,4 +63,9 @@
 .weather_data .col span {
     display: block;
     font-size: 16px;
+}
+.weather_data .col img {
+    width: 26px;
+    color: #343434;
+    margin-top: 10px;
 }
