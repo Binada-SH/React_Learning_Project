@@ -9,5 +9,6 @@
 .app {
   min-height: 100vh;
   display: grid;
-  background: #4bb4ff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/bg.jpg);
+  background-size: cover;
 }

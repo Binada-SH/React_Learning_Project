@@ -8,6 +8,9 @@ import humidity_icon from'../assets/humidity.png'
 import rain_icon from'../assets/rain.png'
 import snow_icon from'../assets/wind.png'
 import wind_icon from'../assets/wind.png'
+import bars from '../assets/bars.svg'
+import star from'../assets/star.svg'
+
 
 const Weather = () => {
 
@@ -55,14 +58,17 @@ const Weather = () => {
     search ("London");
   }, [])
   return (
+
     <div className = 'weather'>
-      <h1>Weather</h1>
         <div className="search_bar">
           <input ref={inputRef} type="text" placeholder = 'Search'/>
           <img src={search_icon} alt="" onClick={()=> search(inputRef.current.value)}/>
         </div>
+        <img className = "nav_bar" src={bars} alt="" />
+        <img className = "star" src={star} alt="" />
+
         <img src={weatherData.icon} alt="" className = 'weather_icon'/>
-        <p className = 'temperature'>{weatherData.temperature} °C</p>
+        <p className = 'temperature'>{weatherData.temperature} <sup>°C</sup></p>
         <p className = 'city_name'>{weatherData.location}</p>
         <div className="weather_data">
           <div className="col">

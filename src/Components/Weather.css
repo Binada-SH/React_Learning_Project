@@ -1,9 +1,13 @@
 .weather {
     place-self: center;
-    width: 380px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 38px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    height: 1080px;
+    width: 480px;
     padding: 40px;
     border-radius: 30px;
-    background-color: #aee2fb;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,24 +18,51 @@
     gap: 10px;
 }
 .search_bar input {
-    height:30px;
+    height:35px;
     border: none;
     outline: none;
     border-radius: 40px;
     padding-left: 25px;
-    color: #494949;
-    background: #f3f3f3;
-    font-size: 15px;
+    color: rgb(73, 73, 73);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 38px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .search_bar img {
-    scale: 0.9;
-    width: 50%;
-    height: 50%;
+    width: 175%;
+    height: 100%;
     padding: 8px;
     border-radius: 40px;
-    background: #f3f3f3;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 38px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
     cursor: pointer;
+}
+.nav_bar {
+    width: 23px;
+    display: flex;
+    margin-left: -23.5rem;
+    margin-top: -1.9rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.nav_bar:hover {
+    transform: scale(1.1);
+}
+.star {
+    width: 26px;
+    display: flex;
+    margin-left: 22.7rem;
+    margin-top: -1.56rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.star:hover {
+    transform: scale(1.1);
 }
 .weather_icon {
     width: 150px;
@@ -39,12 +70,11 @@
 }
 .temperature {
     color: #343434;
-    font-size: 30px;
-
+    font-size: 70px;
 }
 .city_name {
     color: #343434;
-    font-size: 23px;
+    font-size: 33px;
     letter-spacing: 1.3px;
 }
 .weather_data {
