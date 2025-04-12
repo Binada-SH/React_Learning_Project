@@ -99,3 +99,32 @@
     color: #343434;
     margin-top: 10px;
 }
+@media only screen and (max-width: 430px) {
+    body{
+        background-size: cover;
+    }
+    .weather {
+        width: 80%;
+        padding: 20px;
+    }
+    .search_bar input {
+        width: 100%;
+    }
+    .search_bar img {
+        width: 30px;
+        height: 30px;
+    }
+    .nav_bar {
+        display: none;
+    }
+    .star {
+        display: none;
+    }
+
+    .weather_data {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+}
