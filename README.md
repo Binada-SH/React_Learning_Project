@@ -1,3 +1,4 @@
+## React API Weather Web App ##
 ![logo](src/assets/Weather_App_Mockup.jpg)
 
 # React + Vite
